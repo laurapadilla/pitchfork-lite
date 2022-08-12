@@ -1,0 +1,18 @@
+@import "abstracts";
+
+.genre-list {
+  .genre {
+    margin-bottom: 0.5rem;
+
+    a {
+      font-family: $serifLT;
+      font-size: 72px;
+      transition: color 0.3s ease;
+      color: $text-color;
+
+      &:hover {
+        color: $link;
+      }
+    }
+  }
+}

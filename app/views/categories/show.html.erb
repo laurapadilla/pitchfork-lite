@@ -1,3 +1,15 @@
 <h1>
   <%= @category.title %>
 </h1>
+
+<% @category.albums.each do |album| %>
+
+<h2><%= link_to album.title, category_album_path(@category, album) %></h2>
+
+<%= simple_format album.body %>
+
+<% end %>
+
+
+
+<%= link_to "Add an album", new_category_album_path(@category) %>

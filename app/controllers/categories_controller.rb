@@ -16,7 +16,9 @@ class CategoriesController < ApplicationController
     @category = Category.new(params.require(:category).permit(:title))
 
     if @category.save
-      redirect_to root_path
+      redirect_to category_path(@category)
+    else
+      render "new"
     end
   end
 

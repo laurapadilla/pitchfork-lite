@@ -1,10 +1,7 @@
-<h1>Genres!</h1>
-
-<!-- Loop over categories -->
-
-<ul>
+<ul class="genre-list">
   <% @categories.each do |category| %>
-  <li>
-    <%= link_to category.title, category %>
+  <li class="genre">
+    <%= link_to category.title, category_path(category) %>
   </li>
   <% end %>
+</ul>

@@ -5,9 +5,11 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :categories do
-    resources :albums
+    resources :albums  
   end
 
+
+  
   root "categories#index"
 
 end

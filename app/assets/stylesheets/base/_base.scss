@@ -3,11 +3,11 @@
 body {
   background: $white;
   color: $black;
-  font-family: $serifLT;
+  font-family: $sans;
 }
 
 a {
-  color: inherit;
+  color: $link;
   text-decoration: none;
 }
 
@@ -21,15 +21,15 @@ header {
   border-bottom: 3px solid black;
 
   h1 {
-    font-size: 2rem;
-    font-family: $serif;
-    color: $text-color;
+    a {
+      font-size: 3rem;
+      font-family: $serifLT;
+      color: $text-color;
+    }
   }
 
   a {
     margin-right: 2rem;
-    font-size: inherit;
-    color: $link;
   }
 }
 
