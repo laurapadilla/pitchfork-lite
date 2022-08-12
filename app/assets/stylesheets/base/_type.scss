@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Apple Garamond Light";
+  src: url(/public/fonts/AppleGaramond-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Apple Garamond";
+  src: url(/public/fonts/AppleGaramond.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Apple Garamond";
+  src: url(/public/fonts/AppleGaramond-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $serif;
+}
+
+h1 {
+  font-size: $font-xxl;
+}
